@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-family: Barlow;
+    font-weight: 900;
+}
+
+p {
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ab906e;
+}
+
+table {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    background: rgb(95, 60, 60);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+nav {
+    padding-bottom: 10px;
+    background: rgb(95, 60, 60);
+    color: white;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.logo {
+    width: 220px;
+    height: auto;
+    margin-bottom: -88px;
+}
+
+.banner {
+    background-image: url(./images/Coffee_beans.jpg);
+    background-size: cover;
+    height: 550px;
+}
+
+.banner img {
+    display: flex;
+    width: 50%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.navbar ul li {
+    display: inline;
+    padding: 30px;
+}
+
+#mission {
+    display: flex;
+    text-transform: uppercase;
+    font-family: Barlow;
+    font-weight: bold;
+    font-size: 1.5em;
+    align-content: center;
+    padding-top: 13rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.content1 {
+    display: flex;
+    padding-top: 5rem;
+    background-color: white;
+    opacity: 0.5;
+    padding: 3rem;
+    height: 75px;
+    font-family: Barlow;
+}
+
+.content2 {
+    display: flex;
+    margin-top: 5rem;
+    background-color: white;
+    opacity: 0.5;
+    padding: 3rem;
+    height: 75px;
+    min-width: 200px;
+}
+
+.content3 {
+    display: flex;
+    margin-top: 5rem;
+    background-color: white;
+    opacity: 0.5;
+    padding: 3rem;
+    height: 75px;
+    text-align: left;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 5px;
+}
+
+#meet {
+    padding: 30px;
+}
+
+
+/* Start Flexbox container ABOUT */
+
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f5f5ef;
+    min-height: 500px;
+}
+
+.flexbox-item {
+    width: 400px;
+    max-height: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.flexbox-item-1 {
+    flex: 1 0 0;
+    min-height: 100px;
+    flex-shrink: 1;
+    align-self: center;
+    padding: 40px;
+    padding-right: 50px;
+    margin-top: 130px;
+    border: none;
+}
+
+.flexbox-item-2 {
+    display: flex;
+    height: 450px;
+    flex-grow: 2;
+    flex-basis: 0;
+    /* align-items: stretch; */
+    /*  align-self: flex-start; */
+    align-self: center;
+    /*  background-image: url("./images/img_about.jpg") */
+}
+
+.flexbox-item-2 img {
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+}
+
+.flexbox-item-3 {
+    min-height: 300px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+/* End flexbox container ABOUT */
+
+/* Start Flexbox container ROASTS */
+
+.roasts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ab906e;
+    min-height: 500px;
+    justify-content: space-around;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.roasts-item {
+    width: 200px;
+
+}
+
+.roasts-item-1 {
+    min-height: 200px;
+    font-weight: bold;
+    font-family: Barlow;
+    font-size: 1.2em;
+}
+
+.roasts-item-2 {
+    min-height: 200px;
+}
+
+.roasts-item-3 {
+    min-height: 200px;
+}
+
+.roasts-item-4 {
+    min-height: 200px;
+}
+
+.roasts-item img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.descr {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    flex-direction: column;
+}
+
+/* End Flexbox container ROASTS */
+
+
+/* Start Flexbox container BARISTAS */
+
+.barista-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    min-height: 500px;
+    justify-content: space-around;
+    color: black;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.bar-text {
+    font-size: 13px;
+
+}
+
+.barista-item {
+    width: 200px;
+
+}
+
+.barista-item-1 {
+    min-height: 200px;
+    font-weight: bold;
+    font-family: Barlow;
+    font-size: 1.2em;
+    color: black;
+}
+
+.barista-item-2 {
+    min-height: 200px;
+}
+
+.barista-item-3 {
+    min-height: 200px;
+}
+
+.barista-item-4 {
+    min-height: 200px;
+}
+
+.barista-item img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    flex-direction: column;
+}
+
+/* End Flexbox container BARISTAS */
+
+/* Start Flexbox container CONTACT */
+
+.flexbox-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f5f5ef;
+    min-height: 500px;
+}
+
+.contact-item {
+    width: 400px;
+    max-height: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.contact-item-1 {
+    flex: 1 0 0;
+    min-height: 100px;
+    flex-shrink: 1;
+    align-self: center;
+    padding: 40px;
+    padding-right: 50px;
+    margin-top: 130px;
+    border: none;
+}
+
+.contact-item-2 {
+    display: flex;
+    height: 450px;
+    flex-grow: 1;
+    flex-basis: 0;
+    /* align-items: stretch; */
+    /*  align-self: flex-start; */
+    align-self: center;
+    /*  background-image: url("./images/img_about.jpg") */
+}
+
+.contact-item-2 img {
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+}
+
+.contact-item-3 {
+    min-height: 300px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+/* End flexbox container CONTACT */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    background-color: #f5f5ef;
+}
